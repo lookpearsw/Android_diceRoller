@@ -16,6 +16,12 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
+
+//        lateinit var diceImage : ImageView
+//        diceImage = findViewById(R.id.dice_image)
+
+
+
     }
 
 //    private fun rollDice() {
@@ -33,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         val randomInt = Random().nextInt(6) + 1
 
         val diceImage: ImageView = findViewById(R.id.dice_image)
+
         val drawableResource = when (randomInt) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
